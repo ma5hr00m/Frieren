@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+@font-face {
+  font-family: wxwk-b;
+  src: url(../fonts/LXGWWenKaiLite-Bold.ttf);
+}
+
+@font-face {
+  font-family: zcool-r;
+  src: url(../fonts/ZCOOLXiaoWei-Regular.ttf);
+}
+
+#root aside {
+  z-index: 120;
+  position: absolute;
+  right: 3vh;
+  top: 3vh;
+  width: 5vh;
+  height: 5vh;
+}
+
+.music {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+}
+
+.music:hover {
+  cursor: pointer;
+}
+
+.music::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  height: 0;
+  width: 3px;
+  transform: rotate(135deg);
+  background-color: #404040ff;
+  animation: m-forbidden-r-anim .2s ease-in-out forwards;
+}
+
+.music.showAfter::after {
+  animation: m-forbidden-anim .2s ease-in-out forwards;
+}
+
+@keyframes m-forbidden-anim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 40px;
+  }
+}
+
+@keyframes m-forbidden-r-anim {
+  0% {
+    height: 40px;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+
+.music img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+}
+
+audio {
+  display: none;
+}

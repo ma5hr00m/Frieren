@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>葬送のフリーレン</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <meta name="description" content="葬送のフリーレン CSS Animation">
+    <meta name="author" content="ma5hr00m">
+    <link rel="preload" href="./assets/audio/bgm.flac" as="audio">
+    </head>
+  <body>
+    <!-- 葬送のフリレン -->
+    <!-- FRIEREN -->
+    <div id="root">
+      <div class="segment">
+        <div>
+          <h1>勇者</h1>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="segment">
+        <div>
+          <section>
+            <span style="--i: 1;"></span>
+            <span style="--i: 3;"></span>
+            <span style="--i: 5;"></span>
+            <span style="--i: 7;"></span>
+            <span style="--i: 9;"></span>
+            <span style="--i: 7;"></span>
+            <span style="--i: 5;"></span>
+            <span style="--i: 3;"></span>
+            <span style="--i: 1;"></span>
+          </section>
+          <section>
+            <span style="--i: 1;"></span>
+            <span style="--i: 3;"></span>
+            <span style="--i: 5;"></span>
+            <span style="--i: 7;"></span>
+            <span style="--i: 9;"></span>
+            <span style="--i: 7;"></span>
+            <span style="--i: 5;"></span>
+            <span style="--i: 3;"></span>
+            <span style="--i: 1;"></span>
+          </section>
+        </div>
+        <div>
+          <span>葬</span>
+          <span>送</span>
+          <span>の</span>
+          <span>フ</span>
+          <span>リ</span>
+          <span>レ</span>
+          <span>ン</span>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div>
+          <main>
+            <h2>
+              葬送のフリレン
+              <br/>
+              CSS Animation Exercice
+            </h2>
+          </main>
+        </div>
+      </div>
+      <aside>
+        <a id="muteButton" class="music">
+          <img src="./assets/images/music.svg" alt="arrow">
+        </a>
+        <audio controls="controls" autoplay="autoplay" loop>
+          <source src="./assets/audio/bgm.flac" type="audio/mpeg">
+        </audio>
+      </aside>
+    </div>
+  </body>
+  <script>
+    let defaultVolume = 0.1;
+    let audioElement = document.querySelector('audio');
+    let muteButton = document.querySelector('#muteButton');
+    let musicElement = document.querySelector('.music');
+    
+    audioElement.volume = defaultVolume;
+    audioElement.play();
+
+    muteButton.addEventListener('click', function() {
+      audioElement.volume = (audioElement.volume === defaultVolume) ? 0 : defaultVolume;
+    });
+
+    musicElement.addEventListener('click', function() {
+      if (musicElement.classList.contains('showAfter')) {
+        musicElement.classList.remove('showAfter');
+      } else {
+        musicElement.classList.add('showAfter');
+      }
+    });
+
+  </script>
+</html>

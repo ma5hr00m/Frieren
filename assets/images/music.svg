@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>03 - Music</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03---Music" fill="#40464C" fill-rule="nonzero">
+            <path d="M22.8584,0.01 L8.8584,2.01 C8.36580322,2.08046168 7.99996216,2.50238928 8,3 L8,16.82 C7.09348479,16.2782135 6.05606528,15.9946521 5,16 C2.2432,16 0,17.7944 0,20 C0,22.2056 2.2432,24 5,24 C7.7568,24 10,22.2056 10,20 L10,7.8671 L22,6.1528 L22,13.82 C21.0934848,13.2782135 20.0560653,12.9946521 19,13 C16.2432,13 14,14.7944 14,17 C14,19.2056 16.2432,21 19,21 C21.7568,21 24,19.2056 24,17 L24,1 C24.000022,0.710063866 23.8742056,0.434391019 23.6551623,0.244435795 C23.436119,0.0544805701 23.1454147,-0.0310549575 22.8584,0.01 Z M10,3.8672 L22,2.1528 L22,4.1328 L10,5.8472 L10,3.8672 Z" id="Shape"/>
+        </g>
+    </g>
+</svg>
